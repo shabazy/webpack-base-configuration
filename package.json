@@ -1,0 +1,43 @@
+{
+  "name": "shopping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/app/index.js",
+  "scripts": {
+    "start": "NODE_ENV=development npm run webpack:watch",
+    "build": "NODE_ENV=production npm run webpack",
+    "clean": "rimraf dist",
+    "webpack": "webpack --colors --display-error-details --config ./js/webpack/webpack.config.js",
+    "webpack:watch": "webpack --colors --display-error-details --config ./js/webpack/webpack.config.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "redux-devtools": "^3.4.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.1",
+    "webpack-bundle-tracker": "^0.4.2-beta",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "rimraf": "^2.6.2"
+  }
+}
